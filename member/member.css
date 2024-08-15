@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f4e9;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #f4a261;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.team {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e9e4d1;
+}
+
+.team h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 2rem);
+    transition: transform 0.3s ease-in-out;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member-photo img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #e9e4d1;
+}
+
+.member-info {
+    padding: 1rem;
+}
+
+.member-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.member-info p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.details-btn {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.details-btn:hover {
+    background-color: #555;
+}
+
+.member-details {
+    padding: 1rem;
+    background-color: #f7f4e9;
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
