@@ -284,8 +284,8 @@ footer {
 }
 
 .feature-item img {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
     margin-bottom: 20px;
 }
 
@@ -1620,4 +1620,97 @@ body {
   .wk-mobile-12 {
     width: 100%;
   }
+}
+/* Container Styling */
+#benefits .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+#benefits h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Benefit Box Styling */
+#benefits .benefit {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#benefits .benefit:hover {
+  transform: translateY(-5px);
+}
+
+/* Moving Text Styling */
+#benefits .dpms-gpt {
+  font-size: 3rem;
+  font-weight: bold;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #333;
+  animation: move3D 3s infinite;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+#benefits .dpms-gpt::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  animation: shine 2s infinite;
+}
+
+@keyframes move3D {
+  0% {
+    transform: perspective(400px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  25% {
+    transform: perspective(400px) rotateX(0deg) rotateY(20deg) rotateZ(0deg);
+  }
+  50% {
+    transform: perspective(400px) rotateX(0deg) rotateY(0deg) rotateZ(20deg);
+  }
+  75% {
+    transform: perspective(400px) rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Paragraph Styling */
+#benefits p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
 }
